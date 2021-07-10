@@ -1,0 +1,21 @@
+start: instruction+
+
+instruction: 
+		   | MOVE INT				-> move
+		   | CONTROL				-> control
+		   | "color" COLOR			-> color
+		   | "fill" block			-> fill
+		   | "repeat" INT block		-> repeat
+
+block: "{" instruction+ "}"
+
+MOVE: "f" | "b" | "l" | "r"
+CONTROL: "u" | "d" | "h" | "s"
+COLOR: LETTER+
+
+%import common.LETTER
+%import common.INT
+%import common.WS
+%ignore WS
+%ignore /\/\*[\S\s]*?\*\//
+%ignore /\/\/.*/
