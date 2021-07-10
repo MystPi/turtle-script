@@ -1,5 +1,5 @@
 # turtle-script
-A simple scripting language to draw pictures with Python's Turtle module, made with [lark](https://github.com/lark-parser/lark).
+A simple scripting language to draw pictures with Python's Turtle module, made with [Lark](https://github.com/lark-parser/lark).
 
 ## Example
 ```
