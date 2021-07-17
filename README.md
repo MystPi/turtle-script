@@ -6,8 +6,10 @@ A simple scripting language to draw pictures with Python's Turtle module, made w
 // Draws a red square
 color red
 fill {
-    f 100
-    r 90
+    repeat 4 {
+        f 100
+        r 90
+    }
 }
 ```
 ## Commands
