@@ -1,7 +1,7 @@
 # turtle-script
 A simple scripting language to draw pictures with Python's Turtle module, made with [Lark](https://github.com/lark-parser/lark).
 
-## Example
+## Examples
 ```
 // Draws a red square
 color red
@@ -10,6 +10,19 @@ fill {
         f 100
         r 90
     }
+}
+```
+```
+// Draws a flower
+repeat 2 {
+    repeat 4 {
+        repeat 180 {
+            f 4
+            r 2
+        }
+        r 90
+    }
+    r 45
 }
 ```
 ## Commands
